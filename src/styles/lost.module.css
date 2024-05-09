@@ -17,3 +17,11 @@
     padding: .5em 1em;
     border-radius: var(--radius);
 }
+
+.container{
+    height: 300px;
+    margin-bottom: 2em;
+}
+.container img{
+    height: 100%;
+}
