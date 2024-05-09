@@ -21,6 +21,10 @@ const Connect = () => {
                       <button className={connect.btn_2}>Sign Up</button>
                       </Link>
                   </div>
+
+                  <Link to="/">
+                  <p><i className="fa-solid fa-arrow-left"></i> &nbsp;<span>Go back</span></p>
+                  </Link>
               </div>
           </main>
       </>

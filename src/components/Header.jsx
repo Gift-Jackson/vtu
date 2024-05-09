@@ -4,7 +4,7 @@ const Header = () => {
       <>
       <header className={styles.header}>
         <a href="/">
-          <h1 className={styles.brand}>Payy.</h1>
+          <h1 className={styles.brand}>QuestPay</h1>
         </a>
 
         <a href="https://github.com/Gift-Jackson/vtu" target='_blank'>
