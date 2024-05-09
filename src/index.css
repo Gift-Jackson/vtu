@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-family: var(--font-1);
+}
+
+:root {
+  --primary-color: #7b68ee;
+  --secondary-color: rgba(123, 104, 238, .09);
+  /* --bg-color: rgba(123, 104, 238, .09); */
+  --bg-color: #fefefe;
+  --text-color: #505050;
+  --grey:#a0a0a0;
+  --radius: .5em;
+  --border-color: rgba(123, 104, 238, .09);
+  --border: #ededed;
+  --shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  --white: #fefefe;
+  --font-1: "Poppins", sans-serif;
+  --font-2: "Jaro", sans-serif;
+}
+
+*::selection {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+*::-webkit-scrollbar {
+  height: .5rem;
+  width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--secondary-color);
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 0;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 10rem;
+}
+
+.font-2{
+  font-family: var(--font-2);
+}
+body{
+  background-color: var(--bg-color);
+}
+
+main{
+  width: min(90%, 800px);
+  margin: auto;
+}
+
+button{
+  display: flex;justify-content: center;
+  align-items: center;
+  gap: .5em;
+}

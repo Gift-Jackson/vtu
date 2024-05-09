@@ -1,0 +1,48 @@
+.content {
+    text-align: center;
+    width: 100%;
+}
+
+.content p {
+    font-size: small;
+}
+
+.btns {
+    margin: 2em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+
+.btns button {
+    width: 250px;
+    padding: .75em;
+    border-radius: var(--radius);
+    font-size: 1em;
+}
+
+@media screen and (max-width:580px) {
+    .btns {
+        flex-direction: column;
+        gap: .2em;
+        align-items: unset;
+    }
+
+    .btns button {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.btn_1 {
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.btn_2 {
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-color);
+}
