@@ -69,3 +69,6 @@ button{
   align-items: center;
   gap: .5em;
 }
+p{
+  font-size: small;
+}

@@ -1,0 +1,19 @@
+.wrapper{
+    margin-top: 2em;
+    text-align: center;
+}
+.wrapper h1{
+    font-family: var(--font-2);
+    color: var(--primary-color);
+}
+.wrapper p{
+    margin-bottom: 2em;
+}
+
+.back{
+    margin-top: 2em;
+    background-color: var(--secondary-color);
+    font-size: small;
+    padding: .5em 1em;
+    border-radius: var(--radius);
+}
