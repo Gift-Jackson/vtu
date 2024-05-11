@@ -25,8 +25,7 @@ const HeroWrapper = () => {
                 />
               </h1>
               <p>
-                              Join <span className="mark">QuestPay</span> Today... <br />
-                             Purchase data, airtime and Utility bills, all on super cheap rates.
+              Discover the convenience of <span className="mark">QuestPay</span> today! Access incredibly affordable rates for purchasing data, airtime, and paying utility bills
               </p>
               <Link to="/connect">
                 <button className={style.btn}>
