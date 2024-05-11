@@ -25,12 +25,22 @@
   --white: #fefefe;
   --font-1: "Poppins", sans-serif;
   --font-2: "Jaro", sans-serif;
+
+  /* theme */
+  --bg-slider:#f5f6f7;
+  --slider: #fefefe;
+  --theme-shadow:0 5px 10px rgba(0, 0, 0, 0.05);
 }
 .dark{
   --secondary-color: #30313d;
   --bg-color: #17181f;
   --text-color: #fefefe;
   --grey:#616380;
+
+  /* theme */
+  --bg-slider: #30313d;
+  --slider: var(--primary-color);
+  --theme-shadow:0 2px 5px rgba(0, 0, 0, .2);
 }
 
 *::selection {
@@ -94,35 +104,6 @@ p{
   justify-content: center;
   align-items: center;
 }
-.menu-btn .bar{
-  height: 2px;
-  width: 50%;
-  background-color: var(--text-color);
-  border-radius: 50px;
-  position: relative;
-}
-.menu-btn .bar::after{
-  content: "";
-  height: 2px;
-  width: 100%;
-  background-color: var(--text-color);
-  border-radius: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(-6px);
-}
-.menu-btn .bar::before{
-  content: "";
-  height: 2px;
-  width: 100%;
-  background-color: var(--text-color);
-  border-radius: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(6px);
-}
 
 /* Navigations */
 .nav-link{
@@ -131,6 +112,7 @@ p{
 .nav-link.active{
   color: var(--text-color);
 }
+
 
 @media screen and (max-width:953px){
   .menu-btn{

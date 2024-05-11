@@ -1,0 +1,98 @@
+.wrapper {
+    position: fixed;
+    inset: 0;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    z-index: 5;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    position: absolute;
+}
+
+.container {
+    z-index: 9;
+    background-color: var(--bg-color);
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    margin: 0.5em;
+    border-radius: 1em;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.theme_text {
+    display: flex;
+    align-items: center;
+    gap: .3em;
+}
+.toggle{
+    height: 20px;
+    width: 40px;
+    background-color: var(--bg-slider);
+    border-radius: 50px;
+}
+.slider{
+    height: 100%;
+    width: 50%;
+    background-color: var(--slider);
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+}
+.dark_slider{
+    height: 100%;
+    width: 50%;
+    background-color: var(--slider);
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    transform: translateX(100%);
+}
+.theme_text span{
+    font-size: 15px;
+}
+
+.nav{
+    padding: 1em 2em;
+    list-style: none;
+}
+.nav a{
+    display: block;
+    padding: .5em;
+}
+
+.nav a.active{
+    background-color: var(--secondary-color);
+}
+
+.btn{
+    padding: .75em 2em;
+    border-radius: var(--radius);
+    border: 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin: 1em 0 2em 3em;
+}
+.btn i{
+    color: var(--white);
+}

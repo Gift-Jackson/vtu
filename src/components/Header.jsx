@@ -1,6 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
 import styles from "../styles/header.module.css";
+import MobileNav from "./MobileNav";
+import { useState } from "react";
 const Header = () => {
+  const [menu, setMenu] = useState(false)
+
+  const toggleMenu = () => {
+    setMenu(!menu)
+  }
+
+
   return (
     <>
       <header className={styles.header}>
@@ -36,12 +45,14 @@ const Header = () => {
                 Let me in... <i className="fa-solid fa-arrow-right"></i>
               </button>
             </Link>
-            <button className="menu-btn">
+            <button onClick={toggleMenu} className="menu-btn">
               <span className="material-symbols-outlined">menu</span>
             </button>
           </div>
         </nav>
       </header>
+
+      {menu && <MobileNav toggleMenu={toggleMenu} />}
     </>
   );
 };
