@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import styles from "../styles/header.module.css";
 import MobileNav from "./MobileNav";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const Header = () => {
   const [menu, setMenu] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -13,6 +13,15 @@ const Header = () => {
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
   };
+
+  useEffect(() => {
+    if (menu) {
+      document.body.classList.add("active-menu")
+    }
+    else {
+      document.body.classList.remove("active-menu")
+    }
+ }, [menu])
 
 
   return (

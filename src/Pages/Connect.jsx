@@ -13,11 +13,11 @@ const Connect = () => {
                   <p>Login or Sign Up to continue...</p>
 
                   <div className={connect.btns}>
-                      <Link>
+                      <Link to="/login">
                       <button className={connect.btn_1}>Login</button>
                       </Link>
                       <p>Or</p>
-                      <Link>
+                      <Link to="/signup">
                       <button className={connect.btn_2}>Sign Up</button>
                       </Link>
                   </div>

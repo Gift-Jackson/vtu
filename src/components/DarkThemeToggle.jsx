@@ -1,4 +1,5 @@
 import styles from "../styles/mobilenav.module.css";
+import PropTypes from '../../node_modules/prop-types'
 
 const DarkThemeToggle = ({ onClick }) => {
   return (
@@ -15,5 +16,9 @@ const DarkThemeToggle = ({ onClick }) => {
     </>
   );
 };
+
+DarkThemeToggle.propTypes = {
+    onClick:PropTypes.string
+}
 
 export default DarkThemeToggle;

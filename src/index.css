@@ -75,6 +75,9 @@ html {
 body{
   background-color: var(--bg-color);
 }
+body.active-menu{
+  overflow: hidden;
+}
 
 .mark{
   color: var(--primary-color);

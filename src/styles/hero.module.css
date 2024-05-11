@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     margin-top: 2em;
+    padding-bottom: 2em;
 }
 
 .left, .right{

@@ -1,8 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import styles from "../styles/mobilenav.module.css";
 import LightThemeToggle from "./LightThemeToggle";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import DarkThemeToggle from "./DarkThemeToggle";
+import PropTypes from '../../node_modules/prop-types'
 
 const MobileNav = ({ toggleMenu, isDarkMode, toggleTheme }) => {
 
@@ -58,5 +59,11 @@ const MobileNav = ({ toggleMenu, isDarkMode, toggleTheme }) => {
     </>
   );
 };
+
+MobileNav.propTypes = {
+    toggleMenu:PropTypes.string,
+    isDarkMode:PropTypes.string,
+    toggleTheme:PropTypes.string
+}
 
 export default MobileNav;

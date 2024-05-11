@@ -1,4 +1,5 @@
 import styles from "../styles/mobilenav.module.css";
+import PropTypes from '../../node_modules/prop-types'
 
 const LightThemeToggle = ({ onClick }) => {
   return (
@@ -15,5 +16,9 @@ const LightThemeToggle = ({ onClick }) => {
     </>
   );
 };
+
+LightThemeToggle.propTypes = {
+    onClick:PropTypes.string
+}
 
 export default LightThemeToggle;
