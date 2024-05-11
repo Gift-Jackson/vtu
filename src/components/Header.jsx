@@ -5,7 +5,7 @@ const Header = () => {
     <>
       <header className={styles.header}>
         <a href="/">
-          <h1 className={styles.brand}>QuestPay</h1>
+          <h2 className={styles.brand}>QuestPay</h2>
         </a>
 
         <nav className={styles.nav}>

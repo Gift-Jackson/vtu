@@ -58,6 +58,7 @@
     .container{
         flex-direction: column-reverse;
         gap: 2em;
+        padding-bottom: 3em;
     }
     .right .img{
         width: 100%;
@@ -67,5 +68,12 @@
         position: unset;
         object-fit: cover;
         border-bottom: unset;
+    }
+    .content{
+        text-align: center;
+    }
+    .btn{
+        margin: 3em auto 0;
+        padding: .8em 2em;
     }
 }

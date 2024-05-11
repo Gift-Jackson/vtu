@@ -30,7 +30,7 @@ const HeroWrapper = () => {
               </p>
               <Link to="/connect">
                 <button className={style.btn}>
-                  Get Started <i className="fa-solid fa-arrow-right"></i>
+                  Get Started <i className="fa-solid fa-arrow-right fa-beat"></i>
                 </button>
               </Link>
             </div>
