@@ -12,7 +12,8 @@
 
 :root {
   --primary-color: #7b68ee;
-  --secondary-color: rgba(123, 104, 238, .09);
+  --secondary-color: #f5f6f7;
+  /* --secondary-color: rgba(123, 104, 238, .09); */
   /* --bg-color: rgba(123, 104, 238, .09); */
   --bg-color: #fefefe;
   --text-color: #505050;
@@ -24,6 +25,12 @@
   --white: #fefefe;
   --font-1: "Poppins", sans-serif;
   --font-2: "Jaro", sans-serif;
+}
+.dark{
+  --secondary-color: #30313d;
+  --bg-color: #17181f;
+  --text-color: #fefefe;
+  --grey:#616380;
 }
 
 *::selection {
@@ -59,8 +66,12 @@ body{
   background-color: var(--bg-color);
 }
 
+.mark{
+  color: var(--primary-color);
+}
+
 main{
-  width: min(90%, 800px);
+  width: min(90%, 1200px);
   margin: auto;
 }
 
@@ -71,4 +82,58 @@ button{
 }
 p{
   font-size: small;
+}
+
+.menu-btn{
+  height: 45px;
+  width: 45px;
+  background-color: var(--secondary-color);
+  border: 0;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.menu-btn .bar{
+  height: 2px;
+  width: 50%;
+  background-color: var(--text-color);
+  border-radius: 50px;
+  position: relative;
+}
+.menu-btn .bar::after{
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--text-color);
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-6px);
+}
+.menu-btn .bar::before{
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--text-color);
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(6px);
+}
+
+/* Navigations */
+.nav-link{
+  color: var(--grey);
+}
+.nav-link.active{
+  color: var(--text-color);
+}
+
+@media screen and (max-width:953px){
+  .menu-btn{
+    display: flex;
+  }
 }

@@ -1,16 +1,4 @@
-.header{
-    width: min(90%, 800px);
-    margin: 0 auto;
-    padding: 1em 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--border-color);
-}
-.brand{
-    font-family: var(--font-2);
-    color: var(--primary-color);
-}
+
 
 .wrapper{
     min-height: 400px;
