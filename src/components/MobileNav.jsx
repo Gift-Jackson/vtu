@@ -4,8 +4,7 @@ import LightThemeToggle from "./LightThemeToggle";
 import { useEffect, useState } from "react";
 import DarkThemeToggle from "./DarkThemeToggle";
 
-const MobileNav = ({ toggleMenu }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false);
+const MobileNav = ({ toggleMenu, isDarkMode, toggleTheme }) => {
 
   useEffect(() => {
     if (isDarkMode) {
@@ -13,11 +12,9 @@ const MobileNav = ({ toggleMenu }) => {
     } else {
       document.body.classList.remove("dark");
     }
-  }, [isDarkMode]);
+  }, [isDarkMode, toggleMenu]);
 
-  const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-  };
+
 
   return (
     <>

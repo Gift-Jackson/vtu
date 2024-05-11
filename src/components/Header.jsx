@@ -3,11 +3,16 @@ import styles from "../styles/header.module.css";
 import MobileNav from "./MobileNav";
 import { useState } from "react";
 const Header = () => {
-  const [menu, setMenu] = useState(false)
+  const [menu, setMenu] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleMenu = () => {
-    setMenu(!menu)
-  }
+    setMenu(!menu);
+  };
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
 
   return (
@@ -52,7 +57,7 @@ const Header = () => {
         </nav>
       </header>
 
-      {menu && <MobileNav toggleMenu={toggleMenu} />}
+      {menu && <MobileNav toggleMenu={toggleMenu} isDarkMode={isDarkMode} toggleTheme={toggleTheme} />}
     </>
   );
 };

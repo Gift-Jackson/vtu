@@ -29,7 +29,7 @@
   /* theme */
   --bg-slider:#f5f6f7;
   --slider: #fefefe;
-  --theme-shadow:0 5px 10px rgba(0, 0, 0, 0.05);
+  --theme-shadow:0 3px 5px rgba(0, 0, 0, 0.2);
 }
 .dark{
   --secondary-color: #30313d;

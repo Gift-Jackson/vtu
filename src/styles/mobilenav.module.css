@@ -5,6 +5,7 @@
     left: 0;
     height: 100dvh;
     z-index: 5;
+    display: none;
 }
 
 .overlay {
@@ -95,4 +96,10 @@
 }
 .btn i{
     color: var(--white);
+}
+
+@media screen and (max-width:953px){
+    .wrapper{
+        display: block;
+    }
 }
